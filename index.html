@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dist/css/lightbox.css">
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div class="title">
+                <a href="#top"><h1>About Me</h1></a>
+            </div>
+
+            <button class="menu-btn" id="menu-btn" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          
+          <nav id="gnavi" class="gnavi">
+            <ul class="gnavi__list">
+              <li class="gnavi__item"><a href="#top" class="gnavi__link">Top</a></li>
+              <li class="gnavi__item"><a href="#atfirst" class="gnavi__link">At First</a></li>
+              <li class="gnavi__item"><a href="#works" class="gnavi__link">Works</a></li>
+              <li class="gnavi__item"><a href="#contact" class="gnavi__link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+</header>
+<main>
+<section class="topvideo" id="top">
+    <video src="images/star.mp4" muted autoplay loop playinline></video>
+</section>
+        <section class="wrapper" id="atfirst">
+            <h2>At First</h2>
+            <div class="textbox">
+                <h3>これまでの人生×半年間の就学＝作品</h3>
+                <p>この度は当サイトをご覧いただき、ありがとうございます。</p>
+                <p>経歴については履歴書・職務経歴書の通りですので、</p>
+                <p>当サイトは今の実力をご覧いただく作品集とさせて頂きました。</p>
+                <p>それらしく言葉で飾ることも得意ではありますが、</p>
+                <p>「これまでの人生で培った経験」と「この半年間の学び」を</p>
+                <p>かけ合わせたこのサイトが、今できる精一杯で、私という人間のすべてです。</p>
+                <p>まだまだ拙いですが、最後までご覧頂けますと幸いです。</p>
+            </div>
+        </section>
+        <section id="works">
+            <div class="wrapper">
+                <h2>Works</h2>
+                <h3>イラスト（クリックで拡大します）</h3>
+                <div class="imgbox">
+                    <figure>
+                        <a href="images/sora.png" data-lightbox="works" data-title="イラスト/空"><img src="images/sora.png" alt=""></a>
+                        <figcaption>イラスト/空</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="images/suiren.png" data-lightbox="works" data-title="イラスト/水連・水面"><img src="images/suiren.png" alt=""></a>
+                        <figcaption>イラスト/水連・水面</figcaption>
+                    </figure>
+                   
+                    <figure>
+                        <a href="images/bird.png" data-lightbox="works" data-title="イラスト/鳥"><img src="images/bird.png" alt=""></a>
+                        <figcaption>イラスト/鳥</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="images/skilltop.png" data-lightbox="works" data-title="授業課題/カンプデザイン(top画像)"><img src="images/skilltop.png" alt=""></a>
+                        <figcaption>授業課題で作成したイラストです。
+                    </figure>
+                    <figure>
+                        <a href="images/dogcl.svg" data-lightbox="works" data-title="イラスト/犬"><img src="images/dogcl.svg" alt=""></a>
+                        <figcaption>イラスト/犬</figcaption>
+                    </figure>
+                </div>
+                <h3>サイトデザイン（クリックでリンク先に飛びます）</h3>
+                <figure>
+                    <a href="kenkodo/index.html" target="_blank"><img src="images/all.png" alt=""></a>
+                    <figcaption>架空のスープ専門店のサイトです。<br>レスポンシブ対応しております。</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="wrapper" id="contact">
+            <h2>Contact</h2>
+            <figure>
+                <img src="images/contactbird.png" alt="">
+                        <figcaption>この度は当サイトをご覧いただきありがとうございました。<br>これも何かのご縁ですので、採用関係に限らず、作品の感想やご助言など、お気軽にご連絡いただけますと幸いです。<br>下記お問い合わせフォームまたは履歴書記載の電話番号・メールアドレスからお気軽にお問い合わせください。<br>あなた様のご連絡をお待ちしております！</figcaption>
+            </figure>
+            <div class="formbox"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLScJNOJU0TJfyRp8Mrr4qEkFAAeSaEp38-P4dQA67O4Oc8kNqQ/viewform?embedded=true" width="640" height="1000" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe></div>
+        </section>
+    </main>
+
+    <footer>
+        <video src="images/footer.mp4" muted autoplay loop playinline></video>
+        <div class="videotext"><small>&copy;2021 ak</small></div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   
+    <script src="style.js"></script>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+
+</html>

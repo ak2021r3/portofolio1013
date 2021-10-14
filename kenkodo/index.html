@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiroshimaKenkoDo</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <h1>Hiroshima Kenko Do</h1>
+        </div>
+
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="images/top1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/top2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/top3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/top4.jpg" alt=""></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div> -->
+        </div>
+        <nav class="nav" id="nav">
+            <a href="#concept">Concept</a>
+            <a href="#menu">Menu</a>
+            <a href="#access">Access</a>
+        </nav>
+    </header>
+    <main>
+        <section class="wrapper" id="concept">
+            <h2>Concept</h2>
+            <h3>身体がよろこぶおいしいスープ</h3>
+            <img src="images/whitesoup.jpg" alt="白色のスープの写真">
+            <div class="textbox">
+                <p>旬の無農薬野菜をたっぷり使った、おいしくてヘルシーなスープを気軽に楽しめるお店です。</p>
+                <p>地元の契約農家から直送された新鮮な野菜を、贅沢にスープにしました。</p>
+            </div>
+        </section>
+        <section id="menu">
+            <div class="wrapper">
+                <h2>Menu</h2>
+                <div class="imgbox">
+                    <figure>
+                        <img src="images/orangesoup.jpg" alt="オレンジ色のスープの写真">
+                        <figcaption>三原トマトと竹原にんじんのあたたかスープ<br>750円(税込み)</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/soupinbluedish.jpg" alt="黄色のスープの写真">
+                        <figcaption>安芸高田かぼちゃのたっぷりあたたかスープ<br>800円(税込み)</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/greensoup.jpg" alt="緑色のスープの写真">
+                        <figcaption>因島きぬさやのとびきりひんやりスープ<br>900円(税込み)</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section class="wrapper" id="access">
+            <h2>Access</h2>
+            <figure>
+                <img src="images/map.png" alt="地図">
+                <figcaption class="maptext">広電銀山胡駅から徒歩5分<br>セブンマート幟店様むかい</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <small>&copy;2021 HiroshimaKenkoDo</small>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="style.js"></script>
+</body>
+
+</html>

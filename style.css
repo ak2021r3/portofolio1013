@@ -1,0 +1,329 @@
+@charset "utf-8";
+
+
+/* 共通設定 */
+* {
+    max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.wrapper {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.title {
+    margin: auto;
+}
+
+h1 {
+    color: #cc3399;
+    padding-left: 2em;
+    font-size: 25px;
+}
+
+@import "bourbon";
+@import "neat";
+h1:hover:before, h1:hover:after{
+        position: absolute;
+        content: 'About Me';
+        transform: translate(-50%,-50%);
+        z-index: 500;
+    }
+
+    h1:hover:before {
+        top: 49.5%;
+        left: 49.5%;
+        color: rgba(245, 222, 179, 0.541);
+        animation: distort1 500ms linear infinite;
+    }
+
+    h1:hover:after {
+        top: 50.5%;
+        left: 50.5%;
+        color: #cc33998f;
+        animation: distort2 500ms linear infinite;
+    }
+
+
+@keyframes distort1 {
+    0%    { top: 49.5%; left: 49.5%; }
+    12.5% { top: 49.5%; left: 50%; }
+    25%   { top: 49.5%; left: 50.5%; }
+    37.5% { top: 50%; left: 50.5%; }
+    50%   { top: 50.5%; left: 50.5%; }
+    62.5% { top: 50.5%; left: 50%; }
+    75%   { top: 50.5%; left: 49.5%; }
+    87.5% { top: 50%; left: 49.5%; }
+    100%  { top: 49.5%; left: 49.5%; }
+}
+
+@keyframes distort2 {
+    0%    { top: 50.5%; left: 50.5%; }
+    12.5% { top: 50%; left: 50.5%; }
+    25%   { top: 49.5%; left: 50.5%; }
+    37.5% { top: 49.5%; left: 50%; }
+    50%   { top: 49.5%; left: 49.5%; }
+    62.5% { top: 50%; left: 49.5%; }
+    75%   { top: 50.5%; left: 49.5%; }
+    87.5% { top: 50.5%; left: 50%; }
+    100%  { top: 50.5%; left: 50.5%; }
+}
+
+
+
+.top {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    background-color: #3399cc;
+    position: fixed;
+    z-index: 9999;
+    align-items: center;
+    height: 100px;
+}
+
+
+
+nav a, .title a {
+    color: #cc3399;
+    text-decoration:none; 
+}
+
+.menu-btn {
+    width: 50px;
+    height: 50px;
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid #cc3399;
+    border-radius: 5px;
+    margin-right: 5px;
+} 
+
+/* ↑改訂版 */
+ul,
+ol {
+  list-style-type: none;
+}
+
+
+.menu-btn:focus {
+    outline: none;
+}
+  
+.menu-btn span {
+    background: #cc3399;
+    display: block;
+    width: 100%;
+    height: 5px;
+}
+  
+.close span:first-child {
+    transform: rotate(45deg) translate(4px, -5px);
+    transform-origin: left top;
+}
+  
+.close span:nth-child(2)  {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+  
+.close span:last-child {
+    display: none;
+}
+  
+  
+#gnavi {
+    display: none;
+}
+  
+#gnavi.open {
+    height: 200px;
+    width: 150px;
+    display: block;
+    position: fixed;
+    right: 0;
+    background: #3399ccbb;
+    padding: 0 30px;
+    z-index: 100;
+    margin-top: 60.6px;
+}
+  
+.gnavi__list {
+    /* min-width: 360px; */
+    min-height: 100vh;
+}
+  
+.gnavi__item {
+    border-bottom: 1px dotted #f3f3f3;
+}
+  
+.gnavi__link {
+    padding: .8em 0px .8em 1em;
+    display: block;
+}
+
+#top {
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+}
+
+h2::first-letter {
+    color: #cc3399;
+    font-size: 150%;
+}
+
+.textbox {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 1em;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#works {
+    background-color: #3399cc;
+    color: #f3f3f3;
+}
+
+figure {
+    margin-top: 40px;
+}
+
+figcaption {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.maptext {
+    text-align: center;
+}
+
+#contact img {
+    width: 100%;
+}
+
+footer {
+    /* height: 300px;
+    background-color: #3399cc;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 30px; */
+    position: relative;
+    overflow-x: hidden;
+}
+
+small {
+    color: #cc3399;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+}
+
+
+.videotext {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+
+@media screen and (min-width: 330px) and (max-width: 427px) {
+    h1 {
+        font-size: 32px;
+        padding-left: 1.3em;
+    }
+}
+
+@media screen and (min-width: 428px) and (max-width: 759px) {
+
+    body {
+        max-width: 759px;
+        width: 100%;
+    }
+    .wrapper {
+        width: 90%;
+    }
+
+    h1 {
+        padding-left: 1.5em;
+        font-size: 32px;
+    }
+    .menu-btn {
+        margin-top: 10px;
+    }
+
+
+    #gnavi.open {
+        margin-top: 100px;
+    }
+
+    .imgbox {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media screen and (min-width:760px) {
+    
+    h1 {
+        font-size: 60px;
+        padding-right: .8em;
+    }
+    #gnavi.open {
+        margin-top: 100px;
+        width: 300px;
+    }
+
+    .wrapper {
+        max-width: 1200px;
+    }
+
+    .menu-btn {
+        margin-right: 18px;
+    }
+
+    
+
+
+    .imgbox {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #contact img {
+        width: 60%;
+        margin-left: 5%;
+    }
+
+    #contact figure {
+        display: flex;
+        gap: 5%;
+    }
+
+    #contact figcaption {
+        padding-top: 120px;
+    }
+
+    .formbox {
+        text-align: center;
+        margin-top: 80px;
+    }
+
+}
