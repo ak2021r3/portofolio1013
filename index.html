@@ -7,39 +7,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="dist/css/lightbox.css">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
     <header>
         <div class="top">
             <div class="title">
-                <a href="#top"><h1>About Me</h1></a>
+                <a href="#top">
+                    <h1>About Me</h1>
+                </a>
             </div>
 
             <button class="menu-btn" id="menu-btn" type="button">
                 <span></span>
                 <span></span>
                 <span></span>
-              </button>
-            </div>
-          
-          <nav id="gnavi" class="gnavi">
-            <ul class="gnavi__list">
-              <li class="gnavi__item"><a href="#top" class="gnavi__link">Top</a></li>
-              <li class="gnavi__item"><a href="#atfirst" class="gnavi__link">At First</a></li>
-              <li class="gnavi__item"><a href="#works" class="gnavi__link">Works</a></li>
-              <li class="gnavi__item"><a href="#contact" class="gnavi__link">Contact</a></li>
-            </ul>
-          </nav>
+            </button>
         </div>
-</header>
-<main>
-<section class="topvideo" id="top">
-    <video src="images/star.mp4" muted autoplay loop playinline></video>
-</section>
+
+        <nav id="gnavi" class="gnavi">
+            <ul class="gnavi__list">
+                <li class="gnavi__item"><a href="#top" class="gnavi__link">Top</a></li>
+                <li class="gnavi__item"><a href="#atfirst" class="gnavi__link">At First</a></li>
+                <li class="gnavi__item"><a href="#works" class="gnavi__link">Works</a></li>
+                <li class="gnavi__item"><a href="#contact" class="gnavi__link">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <section class="topvideo" id="top">
+            <video src="images/star.mp4" muted autoplay loop playinline></video>
+        </section>
         <section class="wrapper" id="atfirst">
             <h2>At First</h2>
             <div class="textbox">
@@ -66,23 +77,27 @@
                         <a href="images/suiren.png" data-lightbox="works" data-title="イラスト/水連・水面"><img src="images/suiren.png" alt=""></a>
                         <figcaption>イラスト/水連・水面</figcaption>
                     </figure>
-                   
+
                     <figure>
                         <a href="images/bird.png" data-lightbox="works" data-title="イラスト/鳥"><img src="images/bird.png" alt=""></a>
                         <figcaption>イラスト/鳥</figcaption>
                     </figure>
                     <figure>
-                        <a href="images/skilltop.png" data-lightbox="works" data-title="授業課題/カンプデザイン(top画像)"><img src="images/skilltop.png" alt=""></a>
-                        <figcaption>授業課題で作成したイラストです。
+                        <a href="images/dog.jpg" data-lightbox="works" data-title="授業課題/名刺デザイン"><img src="images/dog.jpg" alt="名刺のデザインと犬のイラスト"></a>
+                        <figcaption>犬のイラストとそれを使った名刺のデザインです。</figcaption>
                     </figure>
                     <figure>
-                        <a href="images/dogcl.svg" data-lightbox="works" data-title="イラスト/犬"><img src="images/dogcl.svg" alt=""></a>
-                        <figcaption>イラスト/犬</figcaption>
+                        <a href="images/skilltop.png" data-lightbox="works" data-title="授業課題/カンプデザイン(top画像)"><img src="images/skilltop.png" alt=""></a>
+                        <figcaption>授業課題で作成したイラストです。
                     </figure>
                 </div>
                 <h3>サイトデザイン（クリックでリンク先に飛びます）</h3>
                 <figure>
-                    <a href="kenkodo/index.html" target="_blank"><img src="images/all.png" alt=""></a>
+                    <a href="https://pc-hana.com/tatami/team-b/index.html" target="_blank"><img src="images/sotusei.png" alt="卒業制作カンプ画像"></a>
+                    <figcaption>架空のスープ専門店のサイトです。<br>レスポンシブ対応しております。</figcaption>
+                </figure>
+                <figure>
+                    <a href="kenkodo/index.html" target="_blank"><img src="images/all.png" alt="架空のスープ専門店カンプ画像"></a>
                     <figcaption>架空のスープ専門店のサイトです。<br>レスポンシブ対応しております。</figcaption>
                 </figure>
             </div>
@@ -90,8 +105,8 @@
         <section class="wrapper" id="contact">
             <h2>Contact</h2>
             <figure>
-                <img src="images/contactbird.png" alt="">
-                        <figcaption>この度は当サイトをご覧いただきありがとうございました。<br>これも何かのご縁ですので、採用関係に限らず、作品の感想やご助言など、お気軽にご連絡いただけますと幸いです。<br>下記お問い合わせフォームまたは履歴書記載の電話番号・メールアドレスからお気軽にお問い合わせください。<br>あなた様のご連絡をお待ちしております！</figcaption>
+                <img src="images/contactbird.png" alt="手紙を咥えた鳥のイラスト">
+                <figcaption>この度は当サイトをご覧いただきありがとうございました。<br>これも何かのご縁ですので、採用関係に限らず、作品の感想やご助言など、お気軽にご連絡いただけますと幸いです。<br>下記お問い合わせフォームまたは履歴書記載の電話番号・メールアドレスからお気軽にお問い合わせください。<br>あなた様のご連絡をお待ちしております！</figcaption>
             </figure>
             <div class="formbox"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLScJNOJU0TJfyRp8Mrr4qEkFAAeSaEp38-P4dQA67O4Oc8kNqQ/viewform?embedded=true" width="640" height="1000" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe></div>
         </section>
@@ -102,7 +117,7 @@
         <div class="videotext"><small>&copy;2021 ak</small></div>
     </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-   
+
     <script src="style.js"></script>
     <script src="dist/js/lightbox-plus-jquery.js"></script>
 
