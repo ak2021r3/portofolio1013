@@ -29,8 +29,8 @@ h1 {
     font-size: 25px;
 }
 
-@import "bourbon";
-@import "neat";
+/* @import "bourbon";
+@import "neat"; */
 h1:hover:before, h1:hover:after{
         position: absolute;
         content: 'About Me';
@@ -181,6 +181,7 @@ ol {
     width: 100%;
     text-align: center;
     background-size: cover;
+    padding-top: 100px;
 }
 
 h2::first-letter {
@@ -196,9 +197,14 @@ h2::first-letter {
     margin-top: 1em;
 }
 
-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+#atfirst {
+    padding-top: 56px;
+    padding-bottom: 120px;
+}
+
+#works, #contact {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 #works {
@@ -206,13 +212,23 @@ section {
     color: #f3f3f3;
 }
 
+h3::first-letter {
+    color: #992277;
+    font-size: 150%;
+}
+
+h3 {
+    margin-top: 24px;
+    color: #000;
+}
+
 figure {
-    margin-top: 40px;
+    margin-top: 8px;
 }
 
 figcaption {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 8px;
+    padding-bottom: 40px;
 }
 
 .maptext {
