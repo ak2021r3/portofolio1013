@@ -197,6 +197,10 @@ h2::first-letter {
     margin-top: 1em;
 }
 
+#p_danraku {
+    margin-bottom: 1rem;
+}
+
 #atfirst {
     padding-top: 56px;
     padding-bottom: 120px;
@@ -231,9 +235,6 @@ figcaption {
     padding-bottom: 40px;
 }
 
-.maptext {
-    text-align: center;
-}
 
 #contact img {
     width: 100%;
