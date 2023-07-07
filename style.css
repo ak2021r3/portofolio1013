@@ -197,6 +197,41 @@ h2::first-letter {
     margin-top: 1em;
 }
 
+.icnbox {
+    text-align: center;
+}
+
+.atfirst_imgbox img {
+    width: 80%;
+    margin: 1.5em;
+}
+
+#web {
+    width: 70%;
+    padding-top: .8em;
+}
+
+
+#movie {
+    padding-top: 1em;
+    padding-bottom: 1.3em;
+} 
+
+.atfirst_imgbox p {
+    color: #003e57;
+    padding-left: 1em;
+    font-weight: 80;
+    text-align: end;
+    padding-right: 1em;
+}
+
+.atfirst_imgbox h3 {
+    text-align: end;
+    padding-right: 1em;
+}
+
+
+
 #p_danraku {
     margin-bottom: 1rem;
 }
@@ -329,7 +364,9 @@ small {
         margin-right: 18px;
     }
 
-    
+    .icnbox {
+        display: flex;
+    }
 
 
     .imgbox {
